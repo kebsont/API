@@ -21,4 +21,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/auth/login/$', obtain_jwt_token, name='api-login'),
     url(r'^api/mailing/', include('mailing.api.urls', namespace='api-mailing')),
+    url(r'^consumers/', include('consumers.urls')),
 ]
